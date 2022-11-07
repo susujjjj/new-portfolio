@@ -1,0 +1,238 @@
+#about {
+  background-color: var(--white-color);
+  padding-bottom: 5rem;
+}
+
+.about_container {
+  display: flex;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+  column-gap: 4rem;
+  max-width: 60rem;
+}
+
+.about_data {
+  text-align: start;
+  margin: 0 auto;
+}
+
+.button_box {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 3rem;
+}
+
+/* .btn-flex {
+  display: inline-flex;
+} */
+.btn {
+  justify-content: flex-end;
+  /* align-items: center; */
+  padding: 1.25rem 2rem;
+  border-radius: 1rem;
+  font-weight: var(--font-medium);
+  justify-content: flex-end;
+  background: rgba(85, 164, 167, 0.5);
+  background: rgba(85, 164, 167, 0.5);
+  border: 3px solid #232323;
+  border: 3px solid #232323;
+  border-radius: 1px;
+  box-shadow: 1px 1px 0 1px #232323;
+  box-shadow: 1px 1px 0 1px #232323;
+  color: #232323;
+  color: black;
+  /* display: block; */
+  font-family: IBM Plex Mono, monospace;
+  font-size: 1rem;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  padding: 15px 25px;
+  text-decoration: none;
+  cursor: pointer;
+  /* transition: background 0.3s ease-in-out; */
+}
+
+.about_img {
+  width: 350px;
+  border-radius: 1.5rem;
+  justify-content: center;
+}
+
+.about_info {
+  grid-template-columns: repeat(3, 140px);
+  gap: 0.5rem;
+  margin-bottom: var(--mb-2);
+}
+
+.about_box {
+  background-color: var(--white-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.75rem;
+  text-align: center;
+  padding: 1rem 1.25rem;
+}
+
+.about_icon {
+  font-size: 1.5rem;
+  color: var(--title-color);
+  margin-bottom: var(--mb-0-5);
+}
+
+.about_title {
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+}
+
+.about_subtitle {
+  font-size: var(--tiny-font-size);
+}
+
+.about_description {
+  color: #222;
+  font-size: 1.3rem;
+  padding: 0 4rem 0 0;
+  margin-bottom: var(--mb-2-5);
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+  .about_container {
+    grid-template-columns: 1fr;
+    row-gap: 2.5rem;
+  }
+
+  .title-layout {
+    display: grid;
+    justify-content: center;
+  }
+
+  .img_box {
+    display: grid;
+    justify-content: center;
+  }
+
+  .about_img {
+    width: 220px;
+  }
+
+  .about_box {
+    padding: 0.75rem 0.5rem;
+  }
+
+  .about_data {
+    text-align: center;
+  }
+
+  .about_info {
+    justify-content: center;
+  }
+
+  .about_description {
+    padding: 0 5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+/* For medium devices */
+@media screen and (max-width: 576px) {
+  .about_info {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .about_description {
+    padding: 0;
+  }
+
+  .button_box {
+    display: flex;
+    justify-content: center;
+    padding-right: 0;
+  }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+  .about_info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .button_box {
+    display: flex;
+    justify-content: center;
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-body {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+}
+
+.about-body {
+  background: var(--white-color);
+  border: 3px solid #232323;
+  border: 3px solid var(--black);
+  border-radius: 1px;
+  box-shadow: 1px 1px 0 1px #232323;
+  box-shadow: 1px 1px 0 1px var(--black);
+  padding: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .about-basic {
+    min-width: 400px;
+    padding: 40px;
+  }
+}
+
+.about-basic {
+  text-align: center;
+}
+
+.about-more {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 10px;
+}
+
+.about-desc {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .about-basic {
+    min-width: 400px;
+    padding: 40px;
+  }
+}
+.about-basic {
+  text-align: center;
+}
+
+.hashtag-group {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+  padding: 0;
+}
+.group-gap {
+  margin-top: 1rem;
+}
+
+.hashtag {
+  border: 3px solid #232323;
+  border: 3px solid #232323;
+  border-radius: 1px;
+  box-shadow: 1px 1px 0 1px #232323;
+  box-shadow: 1px 1px 0 1px#232323;
+  font-size: 0.7rem;
+  color: #222;
+  margin: 5px;
+  padding: 12px 15px 8px;
+  text-transform: uppercase;
+}
