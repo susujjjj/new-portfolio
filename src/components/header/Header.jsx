@@ -76,7 +76,7 @@ function Header() {
 
         {/* right side menu icon */}
         <div className="nav_toggle" onClick={() => setToggleShowMenu(!Toggle)}>
-          <i className="uil uil-apps"></i>
+          <i className="uil uil-bars"></i>
         </div>
       </nav>
     </div>
