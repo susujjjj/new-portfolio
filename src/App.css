@@ -162,6 +162,7 @@ img {
 
 .button_icon {
   margin-left: var(--mb-0-5);
+  margin-bottom: -5px;
 }
 
 .button--flex {
