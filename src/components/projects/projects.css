@@ -23,9 +23,6 @@
   /* padding: 6rem 0 2rem 2.5rem; */
 }
 
-.projects_photo_box {
-}
-
 .projects_photo_box .img {
   height: 9rem;
 }
@@ -50,6 +47,10 @@
   align-items: center;
   cursor: pointer;
   padding: 0 0 0.3rem 0.4rem;
+}
+
+.projects_detail {
+  padding: 1.5rem 1rem 0.4rem;
 }
 
 .projects_button-icon {
@@ -81,7 +82,7 @@
 }
 
 .projects_modal-content {
-  width: 500px;
+  width: 45rem;
   position: relative;
   background-color: var(--white-color);
   padding: 4.5rem 2.5rem 2.5rem;
@@ -102,7 +103,9 @@
   text-align: center;
 }
 
-.projects_modal-title {
+.projects_modal-title,
+.projects_modal-subtitle {
+  color: var(--title-color);
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-1);
