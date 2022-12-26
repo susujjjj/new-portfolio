@@ -20,24 +20,24 @@ const Projects = (props) => {
         <div className="projects_content">
           <div className="projects_photo_box">
             <img src={Wetodo} className="img" alt="img" />
-            {/* <i className="uil uil-web-grid projects_icon"></i>
-            <h3 className="projects_title">
-              Product <br /> Designer
-            </h3> */}
           </div>
 
-          <a
-            className="ViewDemoSiteButton-ViewDemoSiteButton-a5vzN css-1uc6x06"
-            href="https://github.com/susujjjj/todoapp-server"
-          >
-            <span
-              className="projects_button"
-              // onClick={() => openModalHandler(1)}
-            >
+          <a href="https://github.com/susujjjj/share-todo-server">
+            <span className="projects_button">
               View Github
               <i className="uil uil-arrow-right projects_button-icon"></i>
             </span>
           </a>
+
+          <div>
+            <span
+              className="projects_button"
+              onClick={() => openModalHandler(1)}
+            >
+              What I implemented
+              <i className="uil uil-arrow-right projects_button-icon"></i>
+            </span>
+          </div>
 
           <div
             className={
@@ -50,39 +50,70 @@ const Projects = (props) => {
                 className="uil uil-times projects_modal-close"
               ></i>
 
-              <h3 className="projects_modal-title">Product Designer</h3>
-              <p className="projects_modal-description">
-                Service with more than 3 years of experience. Providing quality
-                work to clients and companies.
-              </p>
+              <h3 className="projects_modal-title">We Todo</h3>
+              <div className="projects_modal-subtitle">
+                <p>
+                  Ultimately, what I wanted to get from this side project is to
+                  learn how Node.js and MySQL databases, Socket.io, are used.
+                </p>
+                <p>
+                  I developed my side project real-time share todo application
+                  Using Node.js, React and Socket.io I used MySQL database
+                  because I learned MongoDB before, so this time I studied and
+                  used MySQL and Node.js ORM called Sequelize to access the
+                  database and read the data more easily. And also, I tested API
+                  with Postman.
+                </p>
+              </div>
 
               <ul className="projects_modal-projects grid">
                 <li className="projects_modal-project">
                   <i className="uil uil-check-circle projects_modal-icon"></i>
                   <p className="projects_modal-info">
-                    I develop the user interface.
+                    User authentication using JWT and password hashed with
+                    bcrypt
+                  </p>
+                </li>
+                <li className="projects_modal-project">
+                  <i className="uil uil-check-circle projects_modal-icon"></i>
+                  <p className="projects_modal-info">
+                    Register Schema: id, username, password, name, email, and
+                    the URL address for the profile photo
+                  </p>
+                </li>
+                <li className="projects_modal-project">
+                  <i className="uil uil-check-circle projects_modal-icon"></i>
+                  <p className="projects_modal-info">
+                    Login Schema: username, password
                   </p>
                 </li>
 
                 <li className="projects_modal-project">
                   <i className="uil uil-check-circle projects_modal-icon"></i>
-                  <p className="projects_modal-info">Web page development.</p>
-                </li>
-
-                <li className="projects_modal-project">
-                  <i className="uil uil-check-circle projects_modal-icon"></i>
                   <p className="projects_modal-info">
-                    I create ux element interactions.
+                    Implemented CRUD for todo task and line-through text
+                    decoration for the completed task
                   </p>
                 </li>
 
                 <li className="projects_modal-project">
                   <i className="uil uil-check-circle projects_modal-icon"></i>
                   <p className="projects_modal-info">
-                    Design and mockups of products for companies.
+                    Implemented enables real-time viewing when something happens
+                    when other users connect simultaneously using Socket.io
                   </p>
                 </li>
               </ul>
+
+              <a
+                className="ViewDemoSiteButton-ViewDemoSiteButton-a5vzN"
+                href="https://chloej.notion.site/We-todo-share-todo-app-20f04590a20241898d6078de8fc602d5"
+              >
+                <span className="projects_button projects_detail">
+                  Please check my Notion if you want to see more detail
+                  <i className="uil uil-arrow-right projects_button-icon"></i>
+                </span>
+              </a>
             </div>
           </div>
         </div>
@@ -93,35 +124,29 @@ const Projects = (props) => {
           </div>
 
           <a
-            className="ViewDemoSiteButton-ViewDemoSiteButton-a5vzN css-1uc6x06"
-            href="https://github.com/wecode-bootcamp-korea/9-No.4-frontend"
+            className="ViewDemoSiteButton-ViewDemoSiteButton-a5vzN"
+            href="https://github.com/susujjjj/9-No.4-frontend"
           >
-            <span
-              className="projects_button"
-              // onClick={() => openModalHandler(1)}
-            >
+            <span className="projects_button">
               View Github
               <i className="uil uil-arrow-right projects_button-icon"></i>
             </span>
           </a>
 
           <a
-            className="ViewDemoSiteButton-ViewDemoSiteButton-a5vzN css-1uc6x06"
+            className="ViewDemoSiteButton-ViewDemoSiteButton-a5vzN "
             href="https://www.youtube.com/watch?v=A-BaNR3fjeI&t=3s"
           >
-            <span
-              className="projects_button"
-              // onClick={() => openModalHandler(1)}
-            >
+            <span className="projects_button">
               View Video
               <i className="uil uil-arrow-right projects_button-icon"></i>
             </span>
           </a>
 
-          {/* <span onClick={() => openModalHandler(2)} className="projects_button">
-            View More
+          <span onClick={() => openModalHandler(2)} className="projects_button">
+            What I implemented
             <i className="uil uil-arrow-right projects_button-icon"></i>
-          </span> */}
+          </span>
 
           <div
             className={
@@ -134,36 +159,44 @@ const Projects = (props) => {
                 className="uil uil-times projects_modal-close"
               ></i>
 
-              <h3 className="projects_modal-title">UX/UI Designer</h3>
-              <p className="projects_modal-description">
-                Service with more than 3 years of experience. Providing quality
-                work to clients and companies.
-              </p>
+              <h3 className="projects_modal-title">
+                Channel Shopping Website Clone 06.22 2020 - 07.03 2020
+              </h3>
+              <div className="projects_modal-subtitle">
+                <p>
+                  Channel Shopping Website clone is a team project that I worked
+                  on while I was learning programming at boot camp for the first
+                  time in my life. here are What I implemented below.
+                </p>
+              </div>
 
-              <ul className="projects_modal-project grid">
+              <ul className="projects_modal-projects grid">
                 <li className="projects_modal-project">
                   <i className="uil uil-check-circle projects_modal-icon"></i>
                   <p className="projects_modal-info">
-                    I develop the user interface.
+                    Skills: JavaScript(ES6) React.js(Class Components), Scss,
+                    Fontawesome, React-slick
+                  </p>
+                </li>
+                <li className="projects_modal-project">
+                  <i className="uil uil-check-circle projects_modal-icon"></i>
+                  <p className="projects_modal-info">
+                    implemented Sign up & Sign in toggled UI and fetched API
+                    with post method
+                  </p>
+                </li>
+                <li className="projects_modal-project">
+                  <i className="uil uil-check-circle projects_modal-icon"></i>
+                  <p className="projects_modal-info">
+                    made font size smaller during scrolling in news letter page
                   </p>
                 </li>
 
                 <li className="projects_modal-project">
                   <i className="uil uil-check-circle projects_modal-icon"></i>
-                  <p className="projects_modal-info">Web page development.</p>
-                </li>
-
-                <li className="projects_modal-project">
-                  <i className="uil uil-check-circle projects_modal-icon"></i>
                   <p className="projects_modal-info">
-                    I create ux element interactions.
-                  </p>
-                </li>
-
-                <li className="projects_modal-project">
-                  <i className="uil uil-check-circle projects_modal-icon"></i>
-                  <p className="projects_modal-info">
-                    Design and mockups of products for companies.
+                    Designed carousel slider with react-slick&slick-carousel
+                    library in news letter page
                   </p>
                 </li>
               </ul>
@@ -180,10 +213,7 @@ const Projects = (props) => {
             className="ViewDemoSiteButton-ViewDemoSiteButton-a5vzN css-1uc6x06"
             href="https://velog.io/@rhftnqls/2%EC%B0%A8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%97%90%EC%96%B4%EB%B9%84%EC%95%A4%EB%B9%84"
           >
-            <span
-              className="projects_button"
-              // onClick={() => openModalHandler(1)}
-            >
+            <span className="projects_button">
               View Review
               <i className="uil uil-arrow-right projects_button-icon"></i>
             </span>
@@ -193,18 +223,16 @@ const Projects = (props) => {
             className="ViewDemoSiteButton-ViewDemoSiteButton-a5vzN css-1uc6x06"
             href="https://www.youtube.com/watch?v=28Q003gHF4Q"
           >
-            <span
-              className="projects_button"
-              // onClick={() => openModalHandler(1)}
-            >
+            <span className="projects_button">
               View Video
               <i className="uil uil-arrow-right projects_button-icon"></i>
             </span>
           </a>
-          {/* <span onClick={() => openModalHandler(3)} className="projects_button">
-            View More
+
+          <span onClick={() => openModalHandler(3)} className="projects_button">
+            What I implemented
             <i className="uil uil-arrow-right projects_button-icon"></i>
-          </span> */}
+          </span>
 
           <div
             className={
@@ -217,36 +245,66 @@ const Projects = (props) => {
                 className="uil uil-times projects_modal-close"
               ></i>
 
-              <h3 className="projects_modal-title">Visual Designer</h3>
-              <p className="projects_modal-description">
-                Service with more than 3 years of experience. Providing quality
-                work to clients and companies.
-              </p>
+              <h3 className="projects_modal-title">
+                Airbnb Clone 07.06 2020 - 07.17 2020
+              </h3>
+              <div className="projects_modal-subtitle">
+                <p>
+                  Airbnb clone is a team project that I worked on while I was
+                  learning programming at boot camp. here are What I implemented
+                  below.
+                </p>
+              </div>
 
-              <ul className="projects_modal-project grid">
+              <ul className="projects_modal-projects grid">
                 <li className="projects_modal-project">
                   <i className="uil uil-check-circle projects_modal-icon"></i>
                   <p className="projects_modal-info">
-                    I develop the user interface.
+                    Skills: React(Functional components), Javascript,
+                    styled-components, scss, react-icons, react-dates library
+                  </p>
+                </li>
+                <li className="projects_modal-project">
+                  <i className="uil uil-check-circle projects_modal-icon"></i>
+                  <p className="projects_modal-info">
+                    Mainly developed Header, Main and Footer components
+                  </p>
+                </li>
+                <li className="projects_modal-project">
+                  <i className="uil uil-check-circle projects_modal-icon"></i>
+                  <p className="projects_modal-info">
+                    Implemented header design change when scroll down
+                  </p>
+                </li>
+                <li className="projects_modal-project">
+                  <i className="uil uil-check-circle projects_modal-icon"></i>
+                  <p className="projects_modal-info">
+                    Implemented date range picker calender using react-dates
+                    library and designed in a airbnb customized style with
+                    styled-components
+                  </p>
+                </li>
+                <li className="projects_modal-project">
+                  <i className="uil uil-check-circle projects_modal-icon"></i>
+                  <p className="projects_modal-info">
+                    Navigated to a URL with query string values that received
+                    from location, date and the number
                   </p>
                 </li>
 
                 <li className="projects_modal-project">
                   <i className="uil uil-check-circle projects_modal-icon"></i>
-                  <p className="projects_modal-info">Web page development.</p>
-                </li>
-
-                <li className="projects_modal-project">
-                  <i className="uil uil-check-circle projects_modal-icon"></i>
                   <p className="projects_modal-info">
-                    I create ux element interactions.
+                    Navigated to a URL with query string values that received
+                    from location, date and the number when click search button
                   </p>
                 </li>
 
                 <li className="projects_modal-project">
                   <i className="uil uil-check-circle projects_modal-icon"></i>
                   <p className="projects_modal-info">
-                    Design and mockups of products for companies.
+                    Helped team member's part about implementing Kakao social
+                    login and map api
                   </p>
                 </li>
               </ul>
