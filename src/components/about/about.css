@@ -22,12 +22,8 @@
   padding-right: 3rem;
 }
 
-/* .btn-flex {
-  display: inline-flex;
-} */
 .btn {
   justify-content: flex-end;
-  /* align-items: center; */
   padding: 1.25rem 2rem;
   border-radius: 1rem;
   font-weight: var(--font-medium);
@@ -41,16 +37,35 @@
   box-shadow: 1px 1px 0 1px #232323;
   color: #232323;
   color: black;
-  /* display: block; */
   font-family: IBM Plex Mono, monospace;
   font-size: 1rem;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
   max-width: fit-content;
   padding: 15px 25px;
   text-decoration: none;
   cursor: pointer;
-  /* transition: background 0.3s ease-in-out; */
+}
+
+.btn:hover {
+  justify-content: flex-end;
+  padding: 1.25rem 2rem;
+  border-radius: 1rem;
+  font-weight: var(--font-medium);
+  justify-content: flex-end;
+  background: rgba(124, 214, 226, 0.5);
+  border: 3px solid #232323;
+  border: 3px solid #232323;
+  border-radius: 1px;
+  box-shadow: 1px 1px 0 1px #232323;
+  box-shadow: 1px 1px 0 1px #232323;
+  color: #232323;
+  color: black;
+  font-family: IBM Plex Mono, monospace;
+  font-size: 1rem;
+  max-width: fit-content;
+  padding: 15px 25px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
 .about_img {
