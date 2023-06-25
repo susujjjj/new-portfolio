@@ -42,14 +42,6 @@ const Contact = (props) => {
               <span className="contact_card-data">chlojeong@gmail.com</span>
             </div>
           </div>
-          {/* <div className="contact_card">
-              <i className="uil uil-phone contact__icon"></i>
-              <div className="contact_info_div">
-                <h3 className="contact_card-title">Phone</h3>
-
-                <span className="contact_card-data">+82 1056376381</span>
-              </div>
-            </div> */}
         </div>
         <div className="contact_content">
           <form ref={form} onSubmit={sendEmail} className="contact_form">
